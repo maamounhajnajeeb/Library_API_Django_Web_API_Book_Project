@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     
     # local
     "books.apps.BooksConfig",
+    "apis.apps.ApisConfig",
+    
+    # third-party packages
+    "rest_framework"
 ]
 
 MIDDLEWARE = [
