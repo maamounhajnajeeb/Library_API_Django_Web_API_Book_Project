@@ -18,7 +18,7 @@ class BookTests(TestCase):
         self.assertEqual(book.subtitle, "Django Defentive Guide")
         self.assertEqual(book.author, "William S Vincent")
         self.assertTrue(book.isbn == "1236547893210")
-
+    
     def test_books_listview(self):
         response = self.client.get(reverse("books:home"))
         self.assertEqual(response.status_code, 200)
